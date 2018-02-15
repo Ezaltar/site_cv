@@ -1,0 +1,38 @@
+/*body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}*/
+
+body{
+    background-color: #BBD2E1;
+}
+
+.navbar
+{
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    background-color: #677179;
+    z-index: 1;
+}
+
+@media screen and (max-width: 720px) {
+    .separtaion_nav{
+    padding-top: 20%;
+    padding-bottom: 2%;
+}
+}
+
+@media screen and (min-width: 720px) {
+    .separtaion_nav{
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+}
+
+
+
+.opacity_bar{
+    opacity: 0.8;
+}

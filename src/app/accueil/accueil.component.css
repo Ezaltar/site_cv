@@ -1,0 +1,20 @@
+.custom_police_typed{
+    color: white;
+    text-align: center;
+    padding-top: 28px;
+    font-size: 25px;
+}
+
+.custom-typed{
+    height: 130px;
+    width: 500px;
+    background-color: #798081;
+    margin-top: 9%;
+    margin-bottom: 3%
+}
+@media screen and (max-width: 720px) {
+    .etoile_none{
+        display: none;
+    
+}
+}

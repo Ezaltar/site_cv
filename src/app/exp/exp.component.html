@@ -1,0 +1,124 @@
+<div class="container">
+    <div class="separtaion_nav row">
+        <div class="col-lg-12 col-md-12 col-12" id="liste">
+            <p class="separation"></p>
+            <div class="main">
+                <h1> Compétences </h1>
+                <div class="addItem">
+                    <input [(ngModel)] = "newItem" placeholder= "Ajouter une compétence" class="addText">
+                    <button (click) = "pushItem()" > Ajouter </button>       
+                </div>
+                <ul>
+                    <li *ngFor = "let i of items; let ind = index"> {{i}}
+                        <span (click) = "removeItem(ind)"> x </span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <p class="separation"></p>
+
+    <!--    <div class="row">
+            <div class="col-12 col-md-12 col-lg-12" id="crud">
+                <p class="separation"></p>
+                <h2>
+                    Produit
+                </h2>
+                <table>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Couleur</th>
+    
+                    <tr *ngFor = "let product of products">
+                        <td>{{product.id}}</td>
+                        <td>{{product.name}}</td>
+                        <td>{{product.color}}</td>
+                        <td routerLink = '/product'> <span class="lien">Ajouter</span></td>
+                        <td (click) = "deleteProduct(product.id)"> <a> Supprimer </a> </td>
+    
+                    </tr>
+                </table>
+                <p class="separation"></p>
+            </div>
+        </div>-->
+
+    <div class="row justify-content-around">
+        <div id="api_custom" class="">
+            <h2>
+                Expériences professionelles 
+            </h2>
+            <table>
+
+                <th>Animateur</th>
+                <th>Temps</th>
+
+                <tr *ngFor = "let info of responses">
+                    <td>{{info.pseudo}}</td>
+                    <td> {{info.temps}}</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <p class="separation"></p>
+
+
+    <div id="swapi_custom">
+
+        <h3 class="titre text-center"> Api distante personnages star wars </h3>
+        <table>
+            <th>Nom</th>
+            <th>Taille(cm)</th>
+            <th>Poids(kg)</th>
+            <th>Couleur cheveux</th>
+            <th>Couleur yeux</th>
+            <th>Date naissance</th>
+            <th>Sexe</th>
+
+            <tr>
+                <td> {{padme.name}}</td>
+                <td> {{padme.height}}</td>
+                <td> {{padme.mass}}</td>
+                <td> {{padme.hair_color}}</td>
+                <td> {{padme.eye_color}}</td>
+                <td> {{padme.birth_year}}</td>
+                <td> {{padme.gender}}</td>
+            </tr>
+
+            <tr>
+                <td> {{luke.name}}</td>
+                <td> {{luke.height}}</td>
+                <td> {{luke.mass}}</td>
+                <td> {{luke.hair_color}}</td>
+                <td> {{luke.eye_color}}</td>
+                <td> {{luke.birth_year}}</td>
+                <td> {{luke.gender}}</td>
+            </tr>
+
+            <tr>
+                <td> {{leia.name}}</td>
+                <td> {{leia.height}}</td>
+                <td> {{leia.mass}}</td>
+                <td> {{leia.hair_color}}</td>
+                <td> {{leia.eye_color}}</td>
+                <td> {{leia.birth_year}}</td>
+                <td> {{leia.gender}}</td>
+            </tr>
+
+            <tr>
+                <td> {{anakin.name}}</td>
+                <td> {{anakin.height}}</td>
+                <td> {{anakin.mass}}</td>
+                <td> {{anakin.hair_color}}</td>
+                <td> {{anakin.eye_color}}</td>
+                <td> {{anakin.birth_year}}</td>
+                <td> {{anakin.gender}}</td>
+            </tr>
+
+        </table>
+        <p class="separation"></p>
+    </div>
+</div>

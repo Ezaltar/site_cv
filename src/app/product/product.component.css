@@ -1,0 +1,16 @@
+.separation{
+    margin-top:10%;
+}
+
+ form, label, input, h3{
+    font-size: 30px;
+    padding: 10px;
+}
+
+#formNewProduct{
+    margin-left: 35%
+}
+
+h3{
+    margin-left: 35%
+}

@@ -1,0 +1,19 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "hat",
+      "color": "bleu"
+    },
+    {
+      "name": "caca",
+      "color": "marron",
+      "id": 4
+    },
+    {
+      "name": "fripon",
+      "color": "multicouleur :O",
+      "id": 5
+    }
+  ]
+}
